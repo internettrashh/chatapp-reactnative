@@ -5,9 +5,12 @@ import bak from '../assets/myback.jpeg';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { GlobalContext } from '../context/index';
 
+
 const { width } = Dimensions.get('window');
 
-export default function Homescreen() {
+export default function Homescreen({ navigation }) {
+   
+  
     const {
         showLoginView,
         setShowLoginView,
